@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+
+
+<% if (locals.brandName) { %>
+  <h1> <%= brandName  %></h1>
+<% } else { %>
+  <h1> Welcome To Brand Generator 📙</h1>
+  <% } %>
+
+<form action="/submit" method="POST">
+  <input type="submit" value="Generate Name">
+</form>
+
+<%- include("partials/footer.ejs") %>
